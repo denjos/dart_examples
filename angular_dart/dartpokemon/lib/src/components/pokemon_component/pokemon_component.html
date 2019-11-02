@@ -1,0 +1,10 @@
+<counter-component></counter-component>
+<ul *ngIf="pokeHub!=null">
+  <li *ngFor="let poke of pokeHub.pokemon" (click)="onSelect(poke)">
+      {{poke.name}}
+  </li>
+</ul>
+
+<div *ngIf="pokemon!=null">
+  {{pokemon.name}}
+</div>
